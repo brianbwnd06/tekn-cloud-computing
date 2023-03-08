@@ -1,1 +1,2 @@
 # Rangkuman Cloud Computing
+##### komputasi awan merupakan pemanfaatan teknologi komputer(komputasi) dan pengembangan berbasis internet(awan), komputasi awan juga merupakan metoda komputasi dimana kapabilitas terkait teknologi informasi disajikan sebagai suatu layanan (as a service) sehingga pengguna dapat mengakses melalui internet tanpa mengetahui proses-proses apa saja yang terjadi didalam service tersebut
