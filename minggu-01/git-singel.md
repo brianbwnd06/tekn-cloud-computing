@@ -2,7 +2,7 @@
 
 1. Double click pada file yang di-download. Akan dimunculkan lisensi. Klik **Next** untuk lanjut.
 
-![01](gambar/instal-git-1.png)
+![01](gambar/instal-git-1.png {width=200px height=200px})
 
 2. pilih lokasi instalasi
 
