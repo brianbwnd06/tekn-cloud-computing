@@ -74,14 +74,18 @@
 
 
 
-##2. Konfigurasi awal yang harus dilakukan
+## 2. Konfigurasi awal yang harus dilakukan
 
 Ada beberapa konfigurasi yang harus dupersiapakan sebelum mulai menggunakan Git, seperti name dan email.
 
-Silahkan lakukan konfigurasi dengan perintah berikut ini.
+Silahkan lakukan konfigurasi dengan perintah berikut ini :
 
-``` git config --global user.name "Petani Kode"
-    git config --global user.email contoh@petanikode.com
-```
+```git config --global user.name "brayenbwnd06"```
+```git config --global user.email bwndbrayen06@gmail.com```
+
+Kemudian periksa konfigurasinya dengan perintah :
+```git config --list```
+
+![Konfigurasi](gambar/konfigurasi-git.png)
 
 
