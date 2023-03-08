@@ -32,35 +32,35 @@
 
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-8.png" width='500' />
 
-9. Untuk opsi ekstra, pilih serta aktifkan 1 dan 2.
+9. Pemilihan HTTPS transport backend lalu klik **next**
 
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-10.png" width='500' />
 
-10. Setelah itu proses instalasi akan dilakukan.
+10. Konfigurasi percakapan akhir baris
 
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-11.png" width='500' />
 
-11. Jika selesai akan muncul dialog pemberitahuan. Klik pada **Finish**.
+11. Konfigurasi terminal emulator menggunakan ```Git Bash``` kemudian klik **next**
 
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-12.png" width='500' />
 
-12. Untuk menjalankan, dari Start menu, ketikkan "Git", akan muncul beberapa pilihan. Pilih "Git Bash" atau "Git GUI".
+12. Pilih default behavior dari ```git pull``` kemudian klik **next*
  
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-13.png" width='500' />
 
-13. Tampilan jika akan menggunakan "Git Bash"
+13. memilih pembantu kredensial kemudian klik **next**
 
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-14.png" width='500' />
 
-14. Tampilan jika akan menggunakan "Git GUI"
+14. Konfigurasi opsi tambahan kemudian klik **next**
 
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-15.png" width='500' />
 
-15. Untuk mencoba dari command prompt, masuk ke command prompt, setelah itu eksekusi "git --version" untuk melihat apakah sudah terinstall atau belum. Jika sudah terinstall dengan benar, makan akan muncul hasil berikut:
+15. klik **instal** untuk memulai proses penginstalan git
 
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-16.png" width='500' />
  
-16. Untuk mencoba dari command prompt, masuk ke command prompt, setelah itu eksekusi "git --version" untuk melihat apakah sudah terinstall atau belum. Jika sudah terinstall dengan benar, makan akan muncul hasil berikut:
+16. git berhasil di instal, klik **finish**
 
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-17.png" width='500' />
 
