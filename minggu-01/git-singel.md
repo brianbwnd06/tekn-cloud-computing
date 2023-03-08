@@ -2,7 +2,7 @@
 
 1. Double click pada file yang di-download. Akan dimunculkan lisensi. Klik **Next** untuk lanjut.
 
-![01](gambar/instal-git-1.png {width=200px height=200px})
+![01]<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-1.png" width='300' height="300" />
 
 2. pilih lokasi instalasi
 
