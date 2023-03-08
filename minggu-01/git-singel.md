@@ -94,5 +94,5 @@ Kemudian periksa konfigurasinya dengan perintah :
 
 ## 3. Membuat Repository
 
-<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/repository-github.png" width='500' />
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/repository-github.png" width='800' />
 
