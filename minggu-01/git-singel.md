@@ -1,40 +1,40 @@
 ## Intalasi Git
 
-1. Setelah download Git, double click pada file yang di-download. Akan dimunculkan lisensi. Klik **Next** untuk lanjut.
+1. Double click pada file yang di-download. Akan dimunculkan lisensi. Klik **Next** untuk lanjut.
 
-![01](images/01/install-01.jpg)
+![01](gambar/instal-git-1.png)
 
-2. Setelah itu, pilih lokasi instalasi. Secara default akan terisi *C:\Program Files\Git*. Ganti lokasi jika memang anda menginginkan lokasi lain, klik **Next**
+2. pilih lokasi instalasi
 
-![02](images/01/install-02.jpg)
+![02](gambar/instal-git-1.png)
 
 3. Pilih komponen. Tidak perlu diubah-ubah, sesuai dengan default saja. Klik pada **Next**.
 
-![03](images/01/install-03.jpg)
+![03](gambar/instal-git-2.png)
 
 4. Mengisi shortcut untuk menu Start. Gunakan default (Git), ganti jika ingin mengganti - misalnya Git VCS.
 
-![04](images/01/install-04.jpg)
+![04](gambar/instal-git-3.png)
 
 5. Pilih editor yang akan digunakan bersama dengan Git. Pada pilihan ini, digunakan Notepad++.
 
-![05](images/01/install-05.jpg)
+![05](gambar/instal-git-4.png)
 
 6. Pada saat instalasi, Git menyediakan akses git melalui Bash maupun command prompt. Pilih pilihan kedua supaya bisa menggunakan dari dua antarmuka tersebut. Bash adalah shell di Linux. Dengan menggunakan bash di Windows, pekerjaan di command line Windows bisa dilakukan menggunakan bash - termasuk ekskusi dari Git.
 
-![06](images/01/install-06.jpg)
+![06](gambar/instal-git-5.png)
 
 7. Pilih OpenSSL untuk HTTPS. Git menggunakan https untuk akes ke repo GitHub atau repo-repo lain (GitLab, Assembla).
 
-![07](images/01/install-07.jpg)
+![07](gambar/instal-git-6.png)
 
 8. Pilih pilihan pertama untuk konversi akhir baris (CR-LF).
 
-![08](images/01/install-08.jpg)
+![08](gambar/instal-git-7.png)
 
 9. Pilih PuTTY untuk terminal yang digunakan untuk mengakses Git Bash.
 
-![09](images/01/install-09.jpg)
+![09](gambar/instal-git-8.png)
 
 10. Untuk opsi ekstra, pilih serta aktifkan 1 dan 2.
 
