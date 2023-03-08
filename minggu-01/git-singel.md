@@ -26,51 +26,51 @@
 
 7. Pilih OpenSSL untuk HTTPS. Git menggunakan https untuk akes ke repo GitHub atau repo-repo lain (GitLab, Assembla).
 
-![07](gambar/instal-git-7.png)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-7.png" width='500' />
 
 8. Pilih pilihan pertama untuk konversi akhir baris (CR-LF).
 
-![08](gambar/instal-git-8.png)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-8.png" width='500' />
 
 9. Pilih PuTTY untuk terminal yang digunakan untuk mengakses Git Bash.
 
-![09](gambar/instal-git-9.png)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-9.png" width='500' />
 
 10. Untuk opsi ekstra, pilih serta aktifkan 1 dan 2.
 
-![010](gambar/instal-git-10.png)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-10.png" width='500' />
 
 11. Setelah itu proses instalasi akan dilakukan.
 
-![011](gambar/instal-git-11.png)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-11.png" width='500' />
 
 12. Jika selesai akan muncul dialog pemberitahuan. Klik pada **Finish**.
 
-![012](gambar/instal-git-12.png)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-12.png" width='500' />
 
 13. Untuk menjalankan, dari Start menu, ketikkan "Git", akan muncul beberapa pilihan. Pilih "Git Bash" atau "Git GUI".
  
-![013](gambar/instal-git-13.png)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-13.png" width='500' />
 
 14. Tampilan jika akan menggunakan "Git Bash"
 
-![014](gambar/instal-git-14.png)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-14.png" width='500' />
 
 15. Tampilan jika akan menggunakan "Git GUI"
 
-![015](gambar/instal-git-15.png)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-15.png" width='500' />
 
 16. Untuk mencoba dari command prompt, masuk ke command prompt, setelah itu eksekusi "git --version" untuk melihat apakah sudah terinstall atau belum. Jika sudah terinstall dengan benar, makan akan muncul hasil berikut:
 
-![016](gambar/instal-git-16.png)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-16.png" width='500' />
  
 17. Untuk mencoba dari command prompt, masuk ke command prompt, setelah itu eksekusi "git --version" untuk melihat apakah sudah terinstall atau belum. Jika sudah terinstall dengan benar, makan akan muncul hasil berikut:
 
-![016](gambar/instal-git-17.png)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-17.png" width='500' />
 
 18. Untuk mencoba dari command prompt, masuk ke command prompt, setelah itu eksekusi "git --version" untuk melihat apakah sudah terinstall atau belum. Jika sudah terinstall dengan benar, makan akan muncul hasil berikut:
 
-![016](gambar/instal-git-18.png  = 250x250)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-18.png" width='500' />
 
 
 
@@ -80,19 +80,19 @@ Ada beberapa konfigurasi yang harus dupersiapakan sebelum mulai menggunakan Git,
 
 Silahkan lakukan konfigurasi dengan perintah berikut ini :
 
-```git config --global user.name "brayenbwnd06"
-   git config --global user.email bwndbrayen06@gmail.com
-```
+```git config --global user.name "brayenbwnd06"```
+
+```git config --global user.email bwndbrayen06@gmail.com```
 
 
 Kemudian periksa konfigurasinya dengan perintah :
 
 ```git config --list```
 
-![Konfigurasi](gambar/konfigurasi-git.png  = 250x250)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/konfigurasi-git.png" width='500' />
 
 
 ## 3. Membuat Repository
 
-![Konfigurasi](gambar/repository-github.png  = 250x250)
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/repository-github.png" width='500' />
 
