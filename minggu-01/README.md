@@ -3,4 +3,4 @@
 
 2. [Git Singel ](git-singel.md)
 
-3. [Git Singel ](git-kolaborasi.md)
+3. [Git Kolaborasi ](git-kolaborasi.md)
