@@ -80,10 +80,14 @@ Ada beberapa konfigurasi yang harus dupersiapakan sebelum mulai menggunakan Git,
 
 Silahkan lakukan konfigurasi dengan perintah berikut ini :
 
-```git config --global user.name "brayenbwnd06"```
-```git config --global user.email bwndbrayen06@gmail.com```
+```git config --global user.name "brayenbwnd06"
+
+   git config --global user.email bwndbrayen06@gmail.com
+```
+
 
 Kemudian periksa konfigurasinya dengan perintah :
+
 ```git config --list```
 
 ![Konfigurasi](gambar/konfigurasi-git.png)
