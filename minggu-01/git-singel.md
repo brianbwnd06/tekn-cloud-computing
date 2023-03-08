@@ -70,7 +70,7 @@
 
 18. Untuk mencoba dari command prompt, masuk ke command prompt, setelah itu eksekusi "git --version" untuk melihat apakah sudah terinstall atau belum. Jika sudah terinstall dengan benar, makan akan muncul hasil berikut:
 
-![016](gambar/instal-git-18.png)
+![016](gambar/instal-git-18.png  = 250x250)
 
 
 
@@ -81,7 +81,6 @@ Ada beberapa konfigurasi yang harus dupersiapakan sebelum mulai menggunakan Git,
 Silahkan lakukan konfigurasi dengan perintah berikut ini :
 
 ```git config --global user.name "brayenbwnd06"
-
    git config --global user.email bwndbrayen06@gmail.com
 ```
 
@@ -90,6 +89,10 @@ Kemudian periksa konfigurasinya dengan perintah :
 
 ```git config --list```
 
-![Konfigurasi](gambar/konfigurasi-git.png)
+![Konfigurasi](gambar/konfigurasi-git.png  = 250x250)
 
+
+## 3. Membuat Repository
+
+![Konfigurasi](gambar/repository-github.png  = 250x250)
 
