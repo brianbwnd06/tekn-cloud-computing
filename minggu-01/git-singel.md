@@ -6,11 +6,11 @@
 
 2. pilih lokasi instalasi
 
-![02](gambar/instal-git-1.png)
+![02](gambar/instal-git-2.png)
 
 3. Pilih komponen. Tidak perlu diubah-ubah, sesuai dengan default saja. Klik pada **Next**.
 
-![03](gambar/instal-git-2.png)
+![03](gambar/instal-git-3.png)
 
 4. Mengisi shortcut untuk menu Start. Gunakan default (Git), ganti jika ingin mengganti - misalnya Git VCS.
 
