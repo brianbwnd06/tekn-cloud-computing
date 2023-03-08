@@ -1,4 +1,4 @@
-## Intalasi Git
+## 1. Instalasi Git
 
 1. Double click pada file yang di-download. Akan dimunculkan lisensi. Klik **Next** untuk lanjut.
 
@@ -14,53 +14,74 @@
 
 4. Mengisi shortcut untuk menu Start. Gunakan default (Git), ganti jika ingin mengganti - misalnya Git VCS.
 
-![04](gambar/instal-git-3.png)
+![04](gambar/instal-git-4.png)
 
 5. Pilih editor yang akan digunakan bersama dengan Git. Pada pilihan ini, digunakan Notepad++.
 
-![05](gambar/instal-git-4.png)
+![05](gambar/instal-git-5.png)
 
 6. Pada saat instalasi, Git menyediakan akses git melalui Bash maupun command prompt. Pilih pilihan kedua supaya bisa menggunakan dari dua antarmuka tersebut. Bash adalah shell di Linux. Dengan menggunakan bash di Windows, pekerjaan di command line Windows bisa dilakukan menggunakan bash - termasuk ekskusi dari Git.
 
-![06](gambar/instal-git-5.png)
+![06](gambar/instal-git-6.png)
 
 7. Pilih OpenSSL untuk HTTPS. Git menggunakan https untuk akes ke repo GitHub atau repo-repo lain (GitLab, Assembla).
 
-![07](gambar/instal-git-6.png)
+![07](gambar/instal-git-7.png)
 
 8. Pilih pilihan pertama untuk konversi akhir baris (CR-LF).
 
-![08](gambar/instal-git-7.png)
+![08](gambar/instal-git-8.png)
 
 9. Pilih PuTTY untuk terminal yang digunakan untuk mengakses Git Bash.
 
-![09](gambar/instal-git-8.png)
+![09](gambar/instal-git-9.png)
 
 10. Untuk opsi ekstra, pilih serta aktifkan 1 dan 2.
 
-![010](images/01/install-10.jpg)
+![010](gambar/instal-git-10.png)
 
 11. Setelah itu proses instalasi akan dilakukan.
 
-![011](images/01/install-11.jpg)
+![011](gambar/instal-git-11.png)
 
 12. Jika selesai akan muncul dialog pemberitahuan. Klik pada **Finish**.
 
-![012](images/01/install-12.jpg)
+![012](gambar/instal-git-12.png)
 
 13. Untuk menjalankan, dari Start menu, ketikkan "Git", akan muncul beberapa pilihan. Pilih "Git Bash" atau "Git GUI".
  
-![013](images/01/install-13.jpg)
+![013](gambar/instal-git-13.png)
 
 14. Tampilan jika akan menggunakan "Git Bash"
 
-![014](images/01/install-14.jpg)
+![014](gambar/instal-git-14.png)
 
 15. Tampilan jika akan menggunakan "Git GUI"
 
-![015](images/01/install-15.jpg)
+![015](gambar/instal-git-15.png)
 
 16. Untuk mencoba dari command prompt, masuk ke command prompt, setelah itu eksekusi "git --version" untuk melihat apakah sudah terinstall atau belum. Jika sudah terinstall dengan benar, makan akan muncul hasil berikut:
 
-![016](images/01/install-16.jpg)
+![016](gambar/instal-git-16.png)
  
+17. Untuk mencoba dari command prompt, masuk ke command prompt, setelah itu eksekusi "git --version" untuk melihat apakah sudah terinstall atau belum. Jika sudah terinstall dengan benar, makan akan muncul hasil berikut:
+
+![016](gambar/instal-git-17.png)
+
+18. Untuk mencoba dari command prompt, masuk ke command prompt, setelah itu eksekusi "git --version" untuk melihat apakah sudah terinstall atau belum. Jika sudah terinstall dengan benar, makan akan muncul hasil berikut:
+
+![016](gambar/instal-git-18.png)
+
+
+
+##2. Konfigurasi awal yang harus dilakukan
+
+Ada beberapa konfigurasi yang harus dupersiapakan sebelum mulai menggunakan Git, seperti name dan email.
+
+Silahkan lakukan konfigurasi dengan perintah berikut ini.
+
+``` git config --global user.name "Petani Kode"
+    git config --global user.email contoh@petanikode.com
+```
+
+
