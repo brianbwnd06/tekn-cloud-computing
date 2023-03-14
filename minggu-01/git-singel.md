@@ -96,5 +96,6 @@ Kemudian periksa konfigurasinya dengan perintah :
 
 2. Clonng Repository
 
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/git-clone.png" width='500' />
 
 
