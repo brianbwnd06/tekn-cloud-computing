@@ -3,7 +3,7 @@ Nama : Brian Simon Bawanda
 NIM  : 215610037
 
 
-## Pertemuan Minggu 1
+## Pertemuan Minggu Ke-1
 
 1. [Git Singel ](git-singel.md)
 
