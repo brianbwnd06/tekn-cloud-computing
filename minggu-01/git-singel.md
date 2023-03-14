@@ -64,22 +64,3 @@
 
 ![016](gambar/instal-git-16.png)
 
-16. Untuk mencoba dari command prompt, masuk ke command prompt, setelah itu eksekusi "git --version" untuk melihat apakah sudah terinstall atau belum. Jika sudah terinstall dengan benar, makan akan muncul hasil berikut:
-
-![017](gambar/instal-git-16.png)
-
-17. Untuk mencoba dari command prompt, masuk ke command prompt, setelah itu eksekusi "git --version" untuk melihat apakah sudah terinstall atau belum. Jika sudah terinstall dengan benar, makan akan muncul hasil berikut:
-
-![017](gambar/instal-git-17.png)
-
-18. Untuk mencoba dari command prompt, masuk ke command prompt, setelah itu eksekusi "git --version" untuk melihat apakah sudah terinstall atau belum. Jika sudah terinstall dengan benar, makan akan muncul hasil berikut:
-
-![018](gambar/instal-git-18.png)
-
-
-## Konfigurasi Git
-
-Configurasi git menggunakan command prompt
-
-[Konfigurasi Git](gambar/konfigurasi-git.png)
- 
