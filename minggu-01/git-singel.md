@@ -88,7 +88,13 @@ Kemudian periksa konfigurasinya dengan perintah :
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/konfigurasi-git.png" width='500' />
 
 
-## 3. Membuat Repository
+## 3. Mengolah Repository Sendiri
+
+1. Membuat Repository
 
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/repository-github.png" width='800' />
+
+2. Clonng Repository
+
+
 
