@@ -1,6 +1,13 @@
+Nama : Brian Simon Bawanda
+
+NIM  : 215610037
+
+
 ## Pertemuan Minggu 1
-1. [Rangkuman artikel Cloud Computing](rangkuman-cloud-computing.md)
 
-2. [Git Singel ](git-singel.md)
+1. [Git Singel ](git-singel.md)
 
-3. [Git Kolaborasi ](git-kolaborasi.md)
+2. [Git Kolaborasi ](git-kolaborasi.md)
+
+3. [Rangkuman artikel Cloud Computing](rangkuman-cloud-computing.md)
+
