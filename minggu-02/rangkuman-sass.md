@@ -16,7 +16,7 @@ Perangkat lunak awal yang dikirimkan melalui Internet memiliki fitur yang mirip 
 
 Dengan model ini, satu versi aplikasi, dengan satu konfigurasi digunakan untuk semua pelanggan. Aplikasi diinstal pada beberapa mesin untuk mendukung skalabilitas (disebut penskalaan horizontal). setiap versi aplikasi didasarkan pada kode yang unik
 
-**Ada dua varietas utama SaaS:**
+**Ada dua varietas utama SaaS :**
 
 - SaaS Vertikal
 Perangkat Lunak yang menjawab kebutuhan industri tertentu (misalnya, perangkat lunak untuk industri kesehatan, pertanian, real estat, keuangan)
@@ -24,7 +24,7 @@ Perangkat Lunak yang menjawab kebutuhan industri tertentu (misalnya, perangkat l
 - SaaS Horisontal
 Produk yang berfokus pada kategori perangkat lunak (pemasaran, penjualan, alat pengembang, SDM) tetapi agnostik industri.
 
-**Manfaat SAAS:**
+**Manfaat SAAS :**
 
 memudahkan setiap orang mengakses suatu aplikasi. Dengan infrastruktur terpusat, memungkinkan Anda mengakses aplikasi dari layanan ini hanya menggunakan browser. Integrasi dapat direncanakan dan dilaksanakan dengan upaya minimal, menciptakan salah satu interval waktu tersingkat yang memungkinkan untuk investasi TI yang besar. Ini juga memungkinkan sejumlah vendor SaaS untuk menawarkan "test drive" perangkat lunak mereka yang bebas risiko (dan seringkali gratis) untuk jangka waktu terbatas, seperti 30 hari. Memberi pelanggan kesempatan untuk mencoba perangkat lunak sebelum mereka membelinya membantu menghilangkan banyak risiko seputar pembelian perangkat lunak.
 
