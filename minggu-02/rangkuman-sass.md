@@ -5,6 +5,7 @@
 **IaaS** menyediakan infrastruktur komputasi, **SaaS** menyediakan aplikasi siap pakai, dan **PaaS** menyediakan platform untuk mengembangkan dan menyebarkan aplikasi. Setiap jenis layanan ini memiliki manfaat dan keterbatasan yang berbeda, dan pengguna harus memilih jenis layanan yang sesuai dengan kebutuhan mereka. jadi *kesimpulannnya yaitu perbedaan dari ketiganya yaitu dari segi layanan yang diberikan*
 
 
+
 ### 2. SaaS Platform Architecture
 
 SaaS adalah model pengiriman umum untuk banyak aplikasi bisnis, termasuk perangkat lunak perkantoran dan perpesanan, perangkat lunak manajemen, virtualisasi, dll. Ini adalah bagian dari nomenklatur komputasi awan, bersama dengan infrastruktur sebagai layanan (IaaS), platform sebagai layanan (PaaS) , desktop sebagai layanan (DaaS).
@@ -30,6 +31,7 @@ memudahkan setiap orang mengakses suatu aplikasi. Dengan infrastruktur terpusat,
 **Dampak pada Peran dan Tanggung Jawab TI :**
 
 Menambahkan SaaS dapat menyebabkan perubahan mendasar dalam peran departemen TI sebagai penyedia layanan informasi. Di masa lalu, sifat penyebaran perangkat lunak telah menempatkan kepala petugas informasi
+
 
 
 ### 3. SaaS (Software as a Service) Platform itecture
