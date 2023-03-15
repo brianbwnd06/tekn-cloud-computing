@@ -12,6 +12,7 @@ SaaS adalah model pengiriman umum untuk banyak aplikasi bisnis, termasuk perangk
 Perangkat lunak awal yang dikirimkan melalui Internet memiliki fitur yang mirip dengan aplikasi lokal dibandingkan dengan aplikasi SaaS. Karena ini awalnya dibuat sebagai aplikasi penyewa tunggal, kemampuannya untuk berbagi data menjadi terbatas. Aplikasi SaaS adalah arsitektur multi-penyewa instans tunggal yang memberikan pengalaman kaya fitur yang bersaing dengan aplikasi lokal.
 
 **Arsitektur SAAS :**
+
 Dengan model ini, satu versi aplikasi, dengan satu konfigurasi digunakan untuk semua pelanggan. Aplikasi diinstal pada beberapa mesin untuk mendukung skalabilitas (disebut penskalaan horizontal). setiap versi aplikasi didasarkan pada kode yang unik
 
 **Ada dua varietas utama SaaS:**
