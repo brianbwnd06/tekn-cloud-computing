@@ -1,4 +1,4 @@
-# Rangkuman Artikel
+# Rangkuman Artikel Software as a Service (SaaS)
 
 ### 1. Perbedaan IaaS, SaaS, dan PaaS
 
