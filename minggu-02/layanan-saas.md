@@ -4,13 +4,13 @@
  
  1.  **Onedrive**
 
- <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-6.png" width='500' />
+ <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-02/gambar/icloud.jpg" width='500' />
 
  OneDrive adalah layanan awan Microsoft yang menghubungkan Anda ke semua file  Anda. Ini memungkinkan Anda menyimpan dan melindungi file Anda, membagikannya dengan orang lain, dan masuk ke file tersebut dari mana saja di semua perangkat Anda.
  
  2. **Icloud**
 
- <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-01/gambar/instal-git-6.png" width='500' />
+ <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-02/gambar/onedrive.jpg" width='500' />
 
  iCloud adalah layanan dari Apple yang menyimpan foto, file, catatan, kata sandi, dan data Anda dengan aman di cloud dan terus memperbaruinya di semua perangkat secara otomatis. iCloud juga memudahkan berbagi foto, file, catatan, dan lainnya dengan teman dan keluarga.
 
