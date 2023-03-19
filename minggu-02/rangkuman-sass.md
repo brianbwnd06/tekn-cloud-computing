@@ -36,6 +36,32 @@ Menambahkan SaaS dapat menyebabkan perubahan mendasar dalam peran departemen TI 
 
 ### 3. SaaS (Software as a Service) Platform itecture
 
+Arsitektur platform SaaS (Software as a Service) adalah model pengembangan perangkat lunak berbasis cloud yang memungkinkan pengguna mengakses aplikasi melalui internet. Arsitektur terdiri dari tiga lapisan: lapisan presentasi, lapisan aplikasi, dan lapisan data.
+
+
+Salah satu keuntungan utama arsitektur SaaS adalah mengurangi biaya pengembangan dan pemeliharaan perangkat lunak, karena pengguna tidak perlu menginstal atau mengelola perangkat lunak di mesin mereka sendiri. Ini juga memungkinkan skalabilitas dan fleksibilitas yang lebih mudah, karena perangkat lunak dapat dengan mudah diperbarui dan dimodifikasi untuk memenuhi kebutuhan pengguna yang terus berubah.
 
 
 ### 4. How to build a cloud-based SaaS Application
+
+Artikel "How to build a cloud-based SaaS application" membahas langkah-langkah yang perlu diambil untuk membangun aplikasi SaaS berbasis cloud. Langkah-langkah tersebut meliputi:
+
+1. Menentukan kebutuhan aplikasi: Menentukan tujuan aplikasi, fitur yang dibutuhkan, dan teknologi yang akan digunakan.
+
+2. Memilih platform cloud: Memilih platform cloud yang tepat dan mempertimbangkan faktor seperti biaya, skalabilitas, dan fitur keamanan.
+
+3. Membuat desain arsitektur: Membuat desain arsitektur untuk aplikasi, termasuk lapisan presentasi, lapisan bisnis, dan lapisan data.
+
+4. Mengembangkan aplikasi: Mengembangkan aplikasi menggunakan teknologi yang dipilih dan memperhatikan fitur seperti otentikasi, otomatisasi, dan manajemen data.
+
+5. Menguji aplikasi: Melakukan pengujian untuk memastikan bahwa aplikasi berjalan dengan baik dan sesuai dengan tujuan yang ditentukan.
+
+6. Meluncurkan aplikasi: Menyiapkan aplikasi untuk peluncuran dan memastikan bahwa peluncuran berjalan lancar.
+
+7. Mengelola dan memelihara aplikasi: Memelihara dan mengelola aplikasi, termasuk memperbarui dan memperbaiki aplikasi jika diperlukan.
+
+
+Artikel ini menekankan pentingnya keamanan dalam pengembangan aplikasi SaaS dan merekomendasikan penggunaan teknologi keamanan seperti enkripsi data, manajemen identitas, dan pemantauan sistem.
+
+
+Secara keseluruhan, artikel ini memberikan panduan langkah-demi-langkah yang berguna bagi pengembang yang ingin membangun aplikasi SaaS berbasis cloud.
