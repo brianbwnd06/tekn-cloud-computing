@@ -16,7 +16,7 @@ Halaman Kedua -> [https://splendid-ray-pantsuit.cyclic.app/brian](https://splend
 
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-03/gambar/signin%20dengan%20github.png" width='500' />
 
-3. Setelah itu pilih menu ```Link your Own``` dan cari ```repository``` yang ingin digunakan
+3. Setelah itu pilih menu ```Link your Own``` kemudian  cari dan pilih ```repository``` yang ingin digunakan
 
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-03/gambar/pilih%20repository.png" width='500' />
 
