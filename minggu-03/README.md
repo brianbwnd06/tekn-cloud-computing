@@ -1,8 +1,10 @@
 ### Contoh penggunaan PaaS menggunakan layanan dari [Cyclic.sh](https://cyclic.sh/)
 
 Link app : 
-[Halaman Utama](https://splendid-ray-pantsuit.cyclic.app "splendid-ray-pantsuit.cyclic.app") https://splendid-ray-pantsuit.cyclic.app
-[Halaman Kedua](https://splendid-ray-pantsuit.cyclic.app/brian "splendid-ray-pantsuit.cyclic.app/brian") https://splendid-ray-pantsuit.cyclic.app/brian
+
+Halaman Utama -> [https://splendid-ray-pantsuit.cyclic.app](https://splendid-ray-pantsuit.cyclic.app "splendid-ray-pantsuit.cyclic.app") 
+
+Halaman Kedua -> [https://splendid-ray-pantsuit.cyclic.app/brian](https://splendid-ray-pantsuit.cyclic.app/brian "splendid-ray-pantsuit.cyclic.app/brian") 
 
 #### Langkah-langkah deploy ke cyclic.sh
 
