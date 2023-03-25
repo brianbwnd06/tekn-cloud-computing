@@ -1,4 +1,4 @@
-## Contoh penggunaan PaaS menggunakan layanan dari [Cyclic.sh](https://cyclic.sh/)
+# Contoh penggunaan PaaS menggunakan layanan dari [Cyclic.sh](https://cyclic.sh/)
 
 Link app : 
 
@@ -6,7 +6,7 @@ Halaman Utama -> [https://splendid-ray-pantsuit.cyclic.app](https://splendid-ray
 
 Halaman Kedua -> [https://splendid-ray-pantsuit.cyclic.app/brian](https://splendid-ray-pantsuit.cyclic.app/brian "splendid-ray-pantsuit.cyclic.app/brian") 
 
-### Langkah-langkah deploy ke cyclic.sh
+## Langkah-langkah deploy ke cyclic.sh
 
 1. Pastikan app yang akan di deploy sudah tersimpan di ```repository``` github
 
@@ -41,5 +41,8 @@ Halaman Kedua -> [https://splendid-ray-pantsuit.cyclic.app/brian](https://splend
 
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-03/gambar/link%20app%202.png" width='500' />
 
+
+
+## Sumber
 
 Sumber Source code sebagai contoh web/app yang di upload ke cyclic.sh :  [https://github.com/liawi2000/liawiexpressrender](https://github.com/liawi2000/liawiexpressrender) 
