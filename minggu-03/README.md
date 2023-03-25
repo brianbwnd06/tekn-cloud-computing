@@ -37,8 +37,11 @@ Halaman Kedua -> [https://splendid-ray-pantsuit.cyclic.app/brian](https://splend
 
 7. Kunjungi ```URL``` tersebut untuk membuka web/app nya
 
+- Halaman Utama web/app 
+
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-03/gambar/link%20app.png" width='500' />
 
+- Halaman Kedua web/app
 <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-03/gambar/link%20app%202.png" width='500' />
 
 
