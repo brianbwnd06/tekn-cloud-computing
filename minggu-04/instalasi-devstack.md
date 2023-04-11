@@ -1,7 +1,7 @@
 ## INSTALASI DEVSTACK PADA UBUNTU
 langkah-langkah untuk menginstal DevStack pada Ubuntu 20.04
 
-1. Buka  ```terminal Ubuntu .
+1. Buka  ```terminal Ubuntu```
 2. Pastikan semua paket sistem terbaru dengan menjalankan perintah berikut:  
      ```sh
      sudo apt-get update
@@ -42,3 +42,11 @@ langkah-langkah untuk menginstal DevStack pada Ubuntu 20.04
     ./stack.sh
     ```
 9. Tunggu proses instalasi hingga selesai.
+
+#### Proses Instalasi menggunakan Terminal Pada UBUNTU
+
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-04/gambar/instalasi%20devstack.png" width='500' />
+
+
+#### File local.conf
+<img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-04/gambar/file%20local.conf.png" width='500' />
