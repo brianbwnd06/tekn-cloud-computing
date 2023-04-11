@@ -35,3 +35,10 @@
 11. Tampilan Virtual Box
 
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-04/gambar/VB-8.png" width='400' />
+
+
+## INSTALASI UBUNTU PADA VIRTUAL BOX
+
+1. Tampilan ketika UBUNTU berhasil terinstal pada virtual box
+
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-04/gambar/ubuntu%20terinstal.png" width='600' />
