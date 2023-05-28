@@ -24,9 +24,9 @@
     
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/go%205.png" width='400' />
 
-7. untuk memastikan bahwa berhasil terinstal maka buka cmd kemudian masukan perintah ```go vesrion``
+7. untuk memastikan bahwa berhasil terinstal maka buka cmd kemudian masukan perintah ```go version``
     
-    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/go%205.png" width='400' />
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/go%206.png" width='400' />
 
 
 
