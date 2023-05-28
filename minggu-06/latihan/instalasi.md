@@ -2,7 +2,7 @@
 
 ### Instalasi Go
 
-1. Setelah Go berhasil di download maka klik kanan lalu open/install
+1. Setelah Go berhasil di download maka klik kanan pada file instaler nya lalu open/install
 
 2. Setelah jendela instal terbuka ```klik next``` untuk lanjut ke license agreement
     
@@ -16,13 +16,19 @@
     
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/go%203.png" width='400' />
 
-5. Jalankan installer dengan hak akses administrator ```klik kanan dan pilih "Run as Administrator"```
+5. Tunggu proses instalasi hingga selesai
     
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/go%204.png" width='400' />
 
-6. Jalankan installer dengan hak akses administrator ```klik kanan dan pilih "Run as Administrator"```
+6. Go berhasil terinstal pada pc/laptop
     
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/go%205.png" width='400' />
+
+7. untuk memastikan bahwa berhasil terinstal maka buka cmd kemudian masukan perintah ```go vesrion``
+    
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/go%205.png" width='400' />
+
+
 
 
 ### Instalasi mySQL
