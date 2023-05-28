@@ -33,5 +33,36 @@
 
 ### Instalasi mySQL
 
+1. Setelah mySQL berhasil di download maka klik kanan pada file instaler nya lalu open/install
+
+2. Setelah mySQL berhasil di download maka klik kanan pada file instaler nya lalu open/install
+    
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql1.png" width='400' />
+
+3. Setelah mySQL berhasil di download maka klik kanan pada file instaler nya lalu open/install
+    
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql2.png" width='400' />
+
+4. Setelah mySQL berhasil di download maka klik kanan pada file instaler nya lalu open/install
+    
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql3.png" width='400' />
+
+5. Setelah mySQL berhasil di download maka klik kanan pada file instaler nya lalu open/install
+    
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql4.png" width='400' />
+
+6. Setelah mySQL berhasil di download maka klik kanan pada file instaler nya lalu open/install
+    
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql5.png" width='400' />
+
+7. Setelah mySQL berhasil di download maka klik kanan pada file instaler nya lalu open/install
+    
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql6.png" width='400' />
+
+8. mySQL berhasil terinstal
+    
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql7.png" width='400' />
+
+
 
 ### Instalasi Mongo DB
