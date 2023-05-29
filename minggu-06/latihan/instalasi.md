@@ -88,9 +88,13 @@
     
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(1).png" width='400' />
 
-3. Pada bagian ```Check Requirements``` pilih ```software yang dibutuhkan``` lalu klik next
+3. Setelah itu scroll user license aggrement sampai bawah kemudian beri centang pada accept the terms in the license aggrement , selanjutnya klik tombol Next untuk melanjutkan ke proses selanjutnya.
 
-4. Di bagian Download, klik ```execute``` untuk men-download semua komponen yang sesuai dengan ```setup type``` yang kita pilih
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(8).png" width='400' />
+
+4. Pada bagian Setup Type kita akan melakukan installasi semua fiturnya dengan mengeklik tombol Complete. Kalian juga dapat menginstall fitur-fiturnya sesuai dengan kebutuhan kalian dengan menekan tombol custom. Kemudian klik tombol Next untuk melanjutkan ke proses selanjutnya.
+
+     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(7).png" width='400' />
 
 5. Tunggu sampai semua komponen ter-install dan muncul tanda check. lalu klik ```next```
 
