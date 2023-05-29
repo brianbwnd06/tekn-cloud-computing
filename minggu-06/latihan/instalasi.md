@@ -106,7 +106,7 @@
 
 7. Selanjutnya klik tombol ```Install``` untuk memulai penginstallan paket-paket pada MongoDB ke komputer kalian. Tunggu prosesnya sampai selesai.
 
- <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(4).png" width='400' />
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(4).png" width='400' />
 
 8. Tunggu hingga proses instalasi selesai
     
