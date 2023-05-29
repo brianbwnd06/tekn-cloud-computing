@@ -3,7 +3,7 @@
 
 1. Data pada mongoDB
 
-    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql7.png" width='600' />
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/data-mongodb.jpg " width='600' />
 
 2. Source Code ```Go``` untuk mengkoneksi dan membaca data dari mongoDB
 
@@ -80,6 +80,6 @@ func printDocument(doc bson.M) {
 
 3. Hasil
 
-    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql7.png" width='600' />
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/hasil-mongodb.jpg" width='600' />
 
 
