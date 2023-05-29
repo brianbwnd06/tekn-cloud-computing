@@ -1,4 +1,4 @@
-## Koneksi dan Membaca data dari mysql menggunakan Go
+## Menggunakan Gin Untuk membuat RESTful API
 
 
 1. Sumber Data
