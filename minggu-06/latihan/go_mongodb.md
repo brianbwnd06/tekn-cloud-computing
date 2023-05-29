@@ -5,7 +5,15 @@
 
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/data-mongodb.jpg " width='600' />
 
-2. Source Code ```Go``` untuk mengkoneksi dan membaca data dari mongoDB
+2. Package yang digunakan 
+
+    ```go
+        go.mongodb.org/mongo-driver/bson
+        go.mongodb.org/mongo-driver/mongo
+        go.mongodb.org/mongo-driver/mongo/options
+    ```
+
+3. Source Code ```Go``` untuk mengkoneksi dan membaca data dari mongoDB
 
     ```go
     package main
@@ -78,7 +86,7 @@
 
     ```
 
-3. Hasil
+4. Hasil
 
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/hasil-mongodb.jpg" width='600' />
 

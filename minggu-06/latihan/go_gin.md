@@ -11,7 +11,18 @@
 
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/data-mysql.jpg" width='600' />
 
-2. Source Code ```Go``` untuk menggunakan Gin untuk membuat RESTful API untuk membaca data dari mysql dan mongoDB
+
+2. Package yang digunakan
+
+    ```go
+         github.com/gin-gonic/gin
+         go.mongodb.org/mongo-driver/bson
+         go.mongodb.org/mongo-driver/mongo
+         go.mongodb.org/mongo-driver/mongo/options
+         github.com/go-sql-driver/mysql
+    ```
+
+3. Source Code ```Go``` untuk menggunakan Gin untuk membuat RESTful API untuk membaca data dari mysql dan mongoDB
 
     ```go
     package main
@@ -133,15 +144,15 @@
 
 
     ```
-3. Gin Running
+4. Gin Running
 
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/gin-runing.jpg" width='600' />
 
-4. Hasil dari mongoDB
+5. Hasil dari mongoDB
 
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/gin-mongodb-hasil.jpg" width='600' />
 
-5. Hasil dari mySQL
+6. Hasil dari mySQL
 
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/gin-mysql-hasil.jpg" width='600' />
 
