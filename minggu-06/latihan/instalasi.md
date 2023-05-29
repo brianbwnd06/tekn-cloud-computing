@@ -81,3 +81,27 @@
 
 
 ### Instalasi Mongo DB
+
+1. Setelah proses download package pada MongoDb selesai, selanjutnya buka folder dimana file yang telah didownload tadi berada kemudian mulai proses installasinya dengan cara klik kanan pada package yang telah didownload kemudian pilih install.
+
+2. Kemudian klik tombol Next untuk melanjutkan proses installasinya.
+    
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(1).png" width='400' />
+
+3. Pada bagian ```Check Requirements``` pilih ```software yang dibutuhkan``` lalu klik next
+
+4. Di bagian Download, klik ```execute``` untuk men-download semua komponen yang sesuai dengan ```setup type``` yang kita pilih
+
+5. Tunggu sampai semua komponen ter-install dan muncul tanda check. lalu klik ```next```
+
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql2.png" width='400' />
+
+6. Akan muncul halaman selanjutnya untuk ```installation```` dan lakukan hal yang sama seperti di halaman Download. Lalu, klik ```Next```
+    
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql3.png" width='400' />
+
+7. Akan muncul halaman Product Configuration. Klik Next.
+
+8. Selanjutnya akan diarahkan ke halaman Type and Networking. Pilih ```Development Computer``` di bagian ```Config Type```
+    
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql4.png" width='400' />
