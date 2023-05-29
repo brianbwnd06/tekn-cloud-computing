@@ -22,7 +22,7 @@
     )
 
     func main() {
-        // 1. Buat koneksi ke server MongoDB
+        // 1. koneksi ke server MongoDB
         client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
         if err != nil {
             log.Fatal(err)
