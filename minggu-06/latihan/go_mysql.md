@@ -4,6 +4,11 @@
 1. Data pada mySQL
 
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/data-mysql.jpg" width='600' />
+2. Package yang digunakan
+
+    ```go
+       github.com/go-sql-driver/mysql
+    ```
 
 2. Source Code ```Go``` untuk mengkoneksi dan membaca data dari mongoDB
 
