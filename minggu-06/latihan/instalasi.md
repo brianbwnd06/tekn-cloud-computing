@@ -82,29 +82,29 @@
 
 ### Instalasi Mongo DB
 
-1. Setelah proses download package pada MongoDb selesai, selanjutnya buka folder dimana file yang telah didownload tadi berada kemudian mulai proses installasinya dengan cara klik kanan pada package yang telah didownload kemudian pilih install.
+1. Setelah ```proses download package pada MongoDb selesai```, selanjutnya buka folder dimana file yang telah didownload tadi berada kemudian mulai proses installasinya dengan cara klik ```kanan pada package``` yang telah didownload kemudian pilih ```install```.
 
-2. Kemudian klik tombol Next untuk melanjutkan proses installasinya.
+2. Kemudian klik tombol ```Next``` untuk melanjutkan proses installasinya.
     
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(1).png" width='400' />
 
-3. Setelah itu scroll user license aggrement sampai bawah kemudian beri centang pada accept the terms in the license aggrement , selanjutnya klik tombol Next untuk melanjutkan ke proses selanjutnya.
+3. Setelah itu scroll ```user license aggrement``` sampai bawah kemudian ```beri centang pada accept the terms in the license aggrement``` , selanjutnya klik ```tombol Next``` untuk melanjutkan ke proses selanjutnya.
 
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(8).png" width='400' />
 
-4. Pada bagian Setup Type kita akan melakukan installasi semua fiturnya dengan mengeklik tombol Complete. Kalian juga dapat menginstall fitur-fiturnya sesuai dengan kebutuhan kalian dengan menekan tombol custom. Kemudian klik tombol Next untuk melanjutkan ke proses selanjutnya.
+4. Pada bagian ```Setup Type``` kita akan melakukan installasi semua fiturnya dengan mengeklik tombol ```Complete```.  Kemudian klik ```tombol Next``` untuk melanjutkan ke proses selanjutnya.
 
      <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(7).png" width='400' />
 
-5. Pada bagian Service Conviguration pilih radio button Run Service as Network Service User , kemudian klik Next untuk melanjutkan prosesnya.
+5. Pada bagian ```Service Conviguration``` pilih ```radio button Run Service as Network Service User``` , kemudian ```klik Next``` untuk melanjutkan prosesnya.
 
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(6).png" width='400' />
 
-6. Selanjutnya kalian akan diberi pilihan apakah akan menginstall MongoDB Compass sekalian atau tidak. MongoDB Compass sendiri merupakan tools GUI dari mongoDB yang dibuat oleh mongoDB sendiri. Tools ini hampir mirip phpmyadmin jika di MySQL. Untuk tutorial ini kita juga akan melakukan install MongoDB Compass sekalian sehingga kalian dapat memberikan centang pada Install MongoDB Compass , selanjutnya klik Next untuk melanjutkan ke tahap berikutnya.
+6. Selanjutnya kalian akan diberi pilihan ```apakah akan menginstall MongoDB Compass``` sekalian atau tidak. MongoDB Compass sendiri merupakan tools GUI dari mongoDB yang dibuat oleh mongoDB sendiri. Tools ini hampir mirip phpmyadmin jika di MySQL. Untuk tutorial ini kita juga akan melakukan install MongoDB Compass sekalian sehingga kalian dapat memberikan centang pada Install MongoDB Compass , selanjutnya klik ```Next``` untuk melanjutkan ke tahap berikutnya.
     
     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(5).png" width='400' />
 
-7. Selanjutnya klik tombol Install untuk memulai penginstallan paket-paket pada MongoDB ke komputer kalian. Tunggu prosesnya sampai selesai.
+7. Selanjutnya klik tombol ```Install``` untuk memulai penginstallan paket-paket pada MongoDB ke komputer kalian. Tunggu prosesnya sampai selesai.
 
  <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(4).png" width='400' />
 
