@@ -130,7 +130,7 @@
 
 3. Hasil dari mongoDB
 
-    <img src="hhttps://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/gin-mongodb-hasil.jpg" width='600' />
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/gin-mongodb-hasil.jpg" width='600' />
 
 4. Hasil dari mySQL
 
