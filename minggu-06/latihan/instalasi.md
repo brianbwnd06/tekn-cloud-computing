@@ -96,16 +96,23 @@
 
      <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(7).png" width='400' />
 
-5. Tunggu sampai semua komponen ter-install dan muncul tanda check. lalu klik ```next```
+5. Pada bagian Service Conviguration pilih radio button Run Service as Network Service User , kemudian klik Next untuk melanjutkan prosesnya.
 
-    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql2.png" width='400' />
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(6).png" width='400' />
 
-6. Akan muncul halaman selanjutnya untuk ```installation```` dan lakukan hal yang sama seperti di halaman Download. Lalu, klik ```Next```
+6. Selanjutnya kalian akan diberi pilihan apakah akan menginstall MongoDB Compass sekalian atau tidak. MongoDB Compass sendiri merupakan tools GUI dari mongoDB yang dibuat oleh mongoDB sendiri. Tools ini hampir mirip phpmyadmin jika di MySQL. Untuk tutorial ini kita juga akan melakukan install MongoDB Compass sekalian sehingga kalian dapat memberikan centang pada Install MongoDB Compass , selanjutnya klik Next untuk melanjutkan ke tahap berikutnya.
     
-    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql3.png" width='400' />
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(5).png" width='400' />
 
-7. Akan muncul halaman Product Configuration. Klik Next.
+7. Selanjutnya klik tombol Install untuk memulai penginstallan paket-paket pada MongoDB ke komputer kalian. Tunggu prosesnya sampai selesai.
 
-8. Selanjutnya akan diarahkan ke halaman Type and Networking. Pilih ```Development Computer``` di bagian ```Config Type```
+ <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(4).png" width='400' />
+
+8. Tunggu hingga proses instalasi selesai
     
-    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mysql4.png" width='400' />
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(2).png" width='400' />
+
+9.  Tampilan utama mongoDB compass
+
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-06/gambar/mongodb%20(9).png" width='400' />
+
