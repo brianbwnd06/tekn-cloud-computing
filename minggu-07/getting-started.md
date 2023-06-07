@@ -10,7 +10,7 @@
 
     Hasil dari kloning repositori nya :
 
-    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-07/gambar/gs2.png" width='400' />
+    <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-07/gambar/gs2.png" width='250' />
 
 2.  Berikutnya yaitu ubah direktori menjadi ```getting-started\app``` dengan menggunakan perintah pada terminal
 
@@ -35,3 +35,11 @@
         CMD ["node", "src/index.js"]
         EXPOSE 3000
     ```
+
+5. Membuat image dengan langkah awal yaitu mengubah direktori menjadi ```getting-started\app``` kemudian masukan perintah berikut
+
+    ```
+        docker build -t getting-started .
+    ```
+
+     <img src="https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-07/gambar/gs5.png" width='400' />
