@@ -13,4 +13,4 @@ NIM  : 215610037
 ### Tugas
 
 
-1. [Diagram dan Penjelasan](Link)
+1. [Diagram dan Penjelasan](https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-08/tugas.md)
