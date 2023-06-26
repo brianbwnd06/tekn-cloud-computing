@@ -123,21 +123,23 @@ ubuntu sleep infinity
 ```
 
 Verifikasi bahwa layanan dibuat dan kedua replika aktif dengan menjalankan ```docker service ls```.
-<div><img src="gambar/19.png"></div><br>
+<div><img src="gambar/s3-step3.png"></div><br>
 
 ```2/2``` di kolom ```REPLIKAS``` menunjukkan bahwa kedua tugas dalam layanan aktif dan berjalan. Verifikasi bahwa satu tugas (replika) berjalan pada masing-masing dari dua node di Swarm dengan menjalankan ```docker service ps myservice```.
-<div><img src="gambar/20.png"></div><br>
+<div><img src="gambar/s3-step3_2.png"></div><br>
 
 Kita juga dapat menjalankan ```docker network inspect overnet``` pada terminal kedua untuk mendapatkan informasi lebih rinci tentang jaringan "overnet" dan mendapatkan alamat IP dari tugas yang berjalan pada terminal kedua.
-<div><img src="gambar/21.png"></div><br>
+<div><img src="gambar/s3-step3_3.png"></div><br>
+<div><img src="gambar/s3-step3_4.png"></div><br>
+<div><img src="gambar/s3-step3_5.png"></div><br>
 
 ### Langkah 4: Uji jaringan
 Untuk menyelesaikan langkah ini, Anda memerlukan alamat IP dari tugas layanan. Jalankan perintah berikut, ```docker network inspect overnet```. Perhatikan bahwa alamat IP yang tercantum untuk tugas layanan (kontainer) yang dijalankan pada node pertama berbeda dengan alamat IP untuk tugas layanan yang dijalankan pada node kedua. Perhatikan juga bahwa mereka berada di jaringan "overnet" yang sama.
-<div><img src="gambar/22.png"></div><br>
+<div><img src="gambar/s3-step4.png"></div><br>
 
 Jalankan perintah ```docker ps``` untuk mendapatkan ID tugas layanan sehingga Anda dapat masuk ke langkah berikutnya. Masuk ke tugas layanan. Pastikan untuk menggunakan penampung ```ID``` dari lingkungan Anda karena akan berbeda dari contoh yang ditampilkan di bawah ini. Kita dapat melakukannya dengan menjalankan ```docker exec -it <CONTAINER ID> /bin/bash```. Instal perintah ping dan ping tugas layanan yang berjalan di kedua node.
-<div><img src="gambar/23.png"></div><br>
-<div><img src="gambar/24.png"></div><br>
+<div><img src="gambar/s3-step4_2.png"></div><br>
+<div><img src="gambar/s3-step4_3.png"></div><br>
 Output di atas menunjukkan bahwa kedua tugas dari layanan myservice berada di jaringan overlay yang sama yang menjangkau kedua node dan mereka dapat menggunakan jaringan ini untuk berkomunikasi.
 
 ### Langkah 5: Uji penemuan layanan
