@@ -54,8 +54,13 @@ Kemudian, daftarkan bridge pada host Docker Anda, dengan menjalankan ```brctl sh
 Jaringan jembatan adalah jaringan default untuk kontainer baru. Ini berarti bahwa kecuali Anda menentukan jaringan yang berbeda, semua wadah baru akan terhubung ke jaringan penghubung. Buat wadah baru dengan menjalankan ```docker run -dt ubuntu sleep infinity```. Perintah ini akan membuat container baru berdasarkan image ```ubuntu:latest``` dan akan menjalankan perintah ```sleep``` agar container tetap berjalan di latar belakang. Anda dapat memverifikasi wadah contoh kami sudah aktif dengan menjalankan ```docker ps```.
 <div><img src="gambar/s2-step2.png"></div><br>
 
+<div><img src="gambar/s2-step2_1.png"></div><br>
+
 Karena tidak ada jaringan yang ditentukan pada perintah ```docker run```, container akan ditambahkan ke jaringan bridge. Jalankan lagi perintah ```brctl show```. Perhatikan bagaimana jembatan docker0 sekarang memiliki antarmuka yang terhubung. Antarmuka ini menghubungkan jembatan docker0 ke wadah baru yang baru saja dibuat. Anda dapat memeriksa kembali jaringan bridge, dengan menjalankan ```docker network inspect bridge```, untuk melihat container baru yang terpasang padanya.
-<div><img src="gambar/10.png"></div><br>
+<div><img src="gambar/s2-step2_2.png"></div><br>
+
+<div><img src="gambar/s2-step2_3.png"></div><br>
+
 
 ### Langkah 3: Uji konektivitas jaringan
 Ping alamat IP wadah dari prompt shell host Docker Anda dengan menjalankan ```ping -c5 <IPv4 Addre>```. Ingatlah untuk menggunakan IP wadah di lingkungan Anda.
