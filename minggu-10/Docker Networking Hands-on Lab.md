@@ -4,9 +4,13 @@
 ### Task
 
 Section #1 - Networking Basics
+
 Section #2 - Bridge Networking
+
 Section #3 - Overlay Networking
+
 Cleaning Up
+
 
 ## Bagian #1 - Networking Basics
 
