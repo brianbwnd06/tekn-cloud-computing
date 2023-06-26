@@ -1,6 +1,11 @@
 # Docker Networking Hands-on Lab
 
 
+### Langkah awal yang dilakukan yaitu login dengan menggunakan akun Docker
+
+<div><img src="gambar/login docker.png"></div>
+
+
 ### Task
 
 Section #1 - Networking Basics
@@ -16,21 +21,19 @@ Cleaning Up
 
 ### Langkah 1: Perintah Jaringan Docker
 Perintah ```docker network``` adalah perintah utama untuk mengonfigurasi dan mengelola jaringan kontainer. Jalankan perintah ```docker network``` dari terminal pertama.
-<div><img src="gambar/1.png"></div>
-
-<div><img src="gambar/2.png"></div>
+<div><img src="gambar/s1-step1.png"></div>
 
 ### Langkah 2: Buat daftar jaringan
 Jalankan perintah ```docker network ls``` untuk melihat jaringan kontainer yang ada di host Docker saat ini.
-<div><img src="gambar/3.png"></div><br>
+<div><img src="gambar/s1-step2.png"></div><br>
 
 ### Langkah 3: Periksa jaringan
 Perintah ```docker network inspect``` digunakan untuk melihat detail konfigurasi jaringan. Gunakan ```docker network inspect <network>``` untuk melihat detail konfigurasi jaringan kontainer di host Docker Anda. Perintah di bawah ini menunjukkan detail jaringan yang disebut ```bridge```.
-<div><img src="gambar/4.png"></div><br>
+<div><img src="gambars1-step3.png"></div><br>
 
 ### Langkah 4: Buat daftar plugin driver jaringan
 Perintah ```docker info``` menampilkan banyak informasi menarik tentang instalasi Docker. Jalankan perintah ```docker info``` dan temukan daftar plugin jaringan.
-<div><img src="gambar/5.png"></div><br>
+<div><img src="gambar/s1-step4.png"></div><br>
 
 ## Bagian #2 - Jaringan Jembatan
 
