@@ -147,8 +147,9 @@ Output di atas menunjukkan bahwa kedua tugas dari layanan myservice berada di ja
 Jalankan formulir ```cat /etc/resolv.conf``` di dalam container. Nilai yang kami minati adalah ```nameserver 127.0.0.11```. Nilai ini mengirim semua kueri DNS dari penampung ke penyelesai DNS tersemat yang berjalan di dalam penampung yang mendengarkan pada ```127.0.0.11:53```. Semua wadah Docker menjalankan server DNS tertanam di alamat ini. Coba dan ping nama "myservice" dari dalam container dengan menjalankan ```ping -c5 myservice```.
 <div><img src="gambar/s3-step5.png"></div><br>
 
-Ketik perintah ```exit``` untuk meninggalkan wadah ```exec``` dan kembali ke prompt shell host Docker Anda. Periksa konfigurasi layanan "myservice" dengan menjalankan ```docker service inspect myservice```. Mari kita verifikasi bahwa nilai VIP cocok dengan nilai yang dikembalikan oleh perintah ```ping -c5 myservice``` sebelumnya.
 <div><img src="gambar/s3-step5_2.png"></div><br>
+Ketik perintah ```exit``` untuk meninggalkan wadah ```exec``` dan kembali ke prompt shell host Docker Anda. Periksa konfigurasi layanan "myservice" dengan menjalankan ```docker service inspect myservice```. Mari kita verifikasi bahwa nilai VIP cocok dengan nilai yang dikembalikan oleh perintah ```ping -c5 myservice``` sebelumnya.
+<div><img src="gambar/s2-step3_3.png"></div><br>
 
 ## Membersihkan
 Jalankan perintah ```docker service rm myservice``` untuk menghapus layanan bernama myservice. Jalankan perintah ```docker ps``` untuk mendapatkan daftar container yang sedang berjalan. Anda dapat menggunakan perintah ```docker kill <CONTAINER ID ...>``` untuk mematikan wadah ubuntu dan nginx yang kita mulai di awal.
