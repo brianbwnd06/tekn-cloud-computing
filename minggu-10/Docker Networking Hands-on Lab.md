@@ -92,17 +92,23 @@ Jika karena alasan tertentu Anda tidak dapat membuka seion dari browser web, And
 
 ### Langkah 1: Dasar-Dasar
 Pada langkah ini Anda akan menginisialisasi Swarm baru, bergabung dengan satu node pekerja, dan memverifikasi bahwa operasi berhasil. Jalankan ```docker swarm init --advertise-addr $(hostname -i)```. Di terminal pertama, salin seluruh perintah ```docker swarm join ...``` yang ditampilkan sebagai bagian dari output dari output terminal Anda. Kemudian, rekatkan perintah yang disalin ke terminal kedua. Jalankan docker node ls untuk memverifikasi bahwa kedua node adalah bagian dari Swarm.
-<div><img src="gambar/16.png"></div><br>
+<div><img src="gambar/s3-step1.png"></div><br>
+
+<div><img src="gambar/s3-step1_2.png"></div><br>
 
 ### Langkah 2: Buat jaringan overlay
 Sekarang Anda memiliki Swarm yang diinisialisasi, saatnya membuat jaringan overlay. Buat jaringan overlay baru yang disebut "overnet" dengan menjalankan ```docker network create -d overlay overnet```. Gunakan perintah ```docker network ls``` untuk memverifikasi bahwa jaringan berhasil dibuat. Jalankan perintah ```docker network ls``` yang sama dari terminal kedua.
-<div><img src="gambar/17a.png"></div><br>
-<div><img src="gambar/17bpng"></div><br>
+<div><img src="gambar/s3-step2.png"></div><br>
+
+<div><img src="gambar/s3-step2_2.png"></div><br>
 
 Perhatikan bahwa jaringan “overnet” tidak muncul dalam daftar. Ini karena Docker hanya memperluas jaringan overlay ke host saat dibutuhkan. Ini biasanya saat host menjalankan tugas dari layanan yang dibuat di jaringan. Kami akan melihat ini segera.
 
 Gunakan perintah ```docker network inspect <network>``` untuk melihat informasi lebih rinci tentang jaringan "overnet". Anda harus menjalankan perintah ini dari terminal pertama.
-<div><img src="gambar/18.png"></div><br>
+
+<div><img src="gambar/s3-step2_3.png"></div><br>
+
+<div><img src="gambar/s3-step2_4.png"></div><br>
 
 ### Langkah 3: Buat layanan
 Sekarang kita memiliki Swarm yang diinisialisasi dan jaringan overlay, saatnya membuat layanan yang menggunakan jaringan.
