@@ -21,15 +21,15 @@ Cleaning Up
 
 ### Langkah 1: Perintah Jaringan Docker
 Perintah ```docker network``` adalah perintah utama untuk mengonfigurasi dan mengelola jaringan kontainer. Jalankan perintah ```docker network``` dari terminal pertama.
-<div><img src="gambar/s1-step1.png"></div>
+<div><img src="gambar/s1-step1.jpg"></div>
 
 ### Langkah 2: Buat daftar jaringan
 Jalankan perintah ```docker network ls``` untuk melihat jaringan kontainer yang ada di host Docker saat ini.
-<div><img src="gambar/s1-step2.png"></div><br>
+<div><img src="gambar/s1-step2.jpg"></div><br>
 
 ### Langkah 3: Periksa jaringan
 Perintah ```docker network inspect``` digunakan untuk melihat detail konfigurasi jaringan. Gunakan ```docker network inspect <network>``` untuk melihat detail konfigurasi jaringan kontainer di host Docker Anda. Perintah di bawah ini menunjukkan detail jaringan yang disebut ```bridge```.
-<div><img src="gambars1-step3.png"></div><br>
+<div><img src="gambar/s1-step3.png"></div><br>
 
 ### Langkah 4: Buat daftar plugin driver jaringan
 Perintah ```docker info``` menampilkan banyak informasi menarik tentang instalasi Docker. Jalankan perintah ```docker info``` dan temukan daftar plugin jaringan.
@@ -39,14 +39,14 @@ Perintah ```docker info``` menampilkan banyak informasi menarik tentang instalas
 
 ### Langkah 1: Dasar-Dasar
 Setiap instalasi Docker yang bersih dilengkapi dengan jaringan pra-bangun yang disebut jembatan. Verifikasi ini dengan docker ```network ls```.
-<div><img src="gambar/6.png"></div><br>
+<div><img src="gambar/s2-step1.png"></div><br>
 
 Instal perintah ```brctl``` dan gunakan untuk mendaftar jembatan Linux di host Docker Anda. Anda dapat melakukannya dengan menjalankan ```sudo apt-get install bridge-utils```.
-<div><img src="gambar/7.png"></div><br>
+<div><img src="gambar/s2-step1_2.png"></div><br>
 
 Kemudian, daftarkan bridge pada host Docker Anda, dengan menjalankan ```brctl show```. Anda juga dapat menggunakan perintah ```ip a``` untuk melihat detail jembatan docker0.
 
-<div><img src="gambar/8.png"></div><br>
+<div><img src="gambar/s2-step1_2.png"></div><br>
 
 ### Langkah 2: Hubungkan wadah
 Jaringan jembatan adalah jaringan default untuk kontainer baru. Ini berarti bahwa kecuali Anda menentukan jaringan yang berbeda, semua wadah baru akan terhubung ke jaringan penghubung. Buat wadah baru dengan menjalankan ```docker run -dt ubuntu sleep infinity```. Perintah ini akan membuat container baru berdasarkan image ```ubuntu:latest``` dan akan menjalankan perintah ```sleep``` agar container tetap berjalan di latar belakang. Anda dapat memverifikasi wadah contoh kami sudah aktif dengan menjalankan ```docker ps```.
