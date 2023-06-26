@@ -129,10 +129,10 @@ Ketik perintah ```exit``` untuk meninggalkan wadah ```exec``` dan kembali ke pro
 
 ## Membersihkan
 Jalankan perintah ```docker service rm myservice``` untuk menghapus layanan bernama myservice. Jalankan perintah ```docker ps``` untuk mendapatkan daftar container yang sedang berjalan. Anda dapat menggunakan perintah ```docker kill <CONTAINER ID ...>``` untuk mematikan wadah ubuntu dan nginx yang kita mulai di awal.
-<div><img src="gambar/27.png"></div><br>
+<div><img src="gambar/cu1.png"></div><br>
 
 Terakhir, mari hapus node1 dan node2 dari Swarm. Kita dapat menggunakan perintah ```docker swarm leave --force``` untuk melakukan itu.
-<div><img src="gambar/28.png"></div>
-<div><img src="gambar/29.png"></div>
+<div><img src="gambar/cu2.png"></div>
+<div><img src="gambar/cu3.png"></div>
 
 Selamat! Anda telah menyelesaikan lab ini!
