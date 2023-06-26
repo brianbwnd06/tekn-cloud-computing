@@ -80,8 +80,9 @@ Pada langkah ini kita akan memulai container NGINX baru dan memetakan port 8080 
 Mulai wadah baru berdasarkan gambar NGINX resmi dengan menjalankan ```docker run --name web1 -d -p 8080:80 nginx```. Tinjau status container dan pemetaan port dengan menjalankan ```docker ps```.
 <div><img src="gambar/s2-step4.png"></div><br>
 
-Jika karena alasan tertentu Anda tidak dapat membuka seion dari browser web, Anda dapat terhubung dari host Docker Anda menggunakan perintah ```curl 127.0.0.1:8080```.
 <div><img src="gambar/s2-step4_2.png"></div><br>
+
+Jika karena alasan tertentu Anda tidak dapat membuka seion dari browser web, Anda dapat terhubung dari host Docker Anda menggunakan perintah ```curl 127.0.0.1:8080```.
 
 <div><img src="gambar/s2-step4_3.png"></div><br>
 
