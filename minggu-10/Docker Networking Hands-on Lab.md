@@ -64,11 +64,13 @@ Karena tidak ada jaringan yang ditentukan pada perintah ```docker run```, contai
 
 ### Langkah 3: Uji konektivitas jaringan
 Ping alamat IP wadah dari prompt shell host Docker Anda dengan menjalankan ```ping -c5 <IPv4 Addre>```. Ingatlah untuk menggunakan IP wadah di lingkungan Anda.
-<div><img src="gambar/s2-step3.png"></div><br>
 
 Balasan di atas menunjukkan bahwa host Docker dapat melakukan ping ke container melalui jaringan bridge. Namun, kami juga dapat memverifikasi wadah tersebut dapat terhubung ke dunia luar juga. Mari masuk ke container, instal ```ping program```, lalu ping ```www.github.com```.
 
 Pertama, kita perlu memulai ID container pada langkah sebelumnya. Anda dapat menjalankan ``docker ps`` untuk mendapatkannya. Selanjutnya, mari jalankan shell di dalam wadah ubuntu itu, dengan menjalankan ```docker exec -it <CONTAINER ID> /bin/bash```. Selanjutnya, kita perlu menginstal program ping. Jadi, mari jalankan ```apt-get update && apt-get install -y iputils-ping```.
+
+<div><img src="gambar/s2-step3.png"></div><br>
+
 <div><img src="gambar/s2-step3_2.png"></div><br>
 
 Mari ping ```www.github.com``` dengan menjalankan ```ping -c5 www.github.com```. Terakhir, lepaskan shell kita dari container, dengan menjalankan ```exit```. Kita juga harus menghentikan penampung ini agar kita membersihkan semuanya dari pengujian ini, dengan menjalankan ```docker stop <CONTAINER ID>```.
