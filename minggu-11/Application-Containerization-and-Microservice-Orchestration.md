@@ -161,14 +161,59 @@ Karena penampung berjalan dalam mode terpisah, jadi kami tidak dapat melihat apa
 
 <div><img src="gambar/step3-9.png"></div>
 
-
-
-
-
-
-
-
 ### Step 4: Link Extractor API and Web Front End Services
+
+Periksa ```step4``` branch dan daftar file di dalamnya.
+
+<div><img src="gambar/step4-1.png"></div>
+
+Pada langkah ini, perubahan berikut telah dilakukan sejak langkah terakhir:
+
+* Layanan JSON API ekstraktor tautan (ditulis dengan Python) dipindahkan ke ```./api``` folder terpisah yang memiliki kode yang sama persis seperti pada langkah sebelumnya
+* Aplikasi front-end web ditulis dalam PHP di bawah ```./www``` folder yang berbicara dengan JSON API
+* Aplikasi PHP dipasang di dalam ```php:7-apache``` image Docker resmi untuk modifikasi yang lebih mudah selama pengembangan
+* Aplikasi web dibuat dapat diakses di ```http://<hostname>[:<prt>]/?url=<url-encoded-url>```
+* Variabel lingkungan ```API_ENDPOINT``` digunakan di dalam aplikasi PHP untuk mengonfigurasinya agar berbicara dengan server API JSON
+* Sebuah ```docker-compose.yml``` file ditulis untuk membangun berbagai komponen dan merekatkannya
+  
+Pada langkah ini kami berencana untuk menjalankan dua wadah terpisah, satu untuk API dan yang lainnya untuk antarmuka web. Yang terakhir membutuhkan cara untuk berbicara dengan server API. Agar kedua kontainer dapat berbicara satu sama lain, kita dapat memetakan port mereka di mesin host dan menggunakannya untuk perutean permintaan atau kita dapat menempatkan kontainer di satu jaringan pribadi dan mengaksesnya secara langsung. Docker memiliki dukungan luar biasa untuk jaringan dan memberikan perintah yang berguna untuk menangani jaringan. Selain itu, dalam wadah jaringan Docker mengidentifikasi diri mereka menggunakan nama mereka sebagai nama host untuk menghindari pencarian alamat IP mereka di jaringan pribadi. Namun, kami tidak akan melakukan semua ini secara manual, sebaliknya kami akan menggunakan Docker Compose untuk mengotomatiskan banyak tugas ini.
+
+Jadi mari kita lihat ```docker-compose.yml``` file yang kita miliki:
+
+<div><img src="gambar/step4-.png"></div>
+
+Ini adalah file YAML sederhana yang menjelaskan dua layanan apidan web. Layanan ```api``` akan menggunakan ```linkextractor-api:step4-python``` image yang belum dibuat, tetapi akan dibuat berdasarkan permintaan menggunakan Dockerfiledari ./apidirektori. Layanan ini akan diekspos di port 5000host.
+
+Layanan kedua bernama ```web``` akan menggunakan ```php:7-apache``` image resmi langsung dari DockerHub, itu sebabnya kami tidak memilikinya ```Dockerfile```. Layanan akan diekspos pada port HTTP default (yaitu, ```80```). Kami akan menyediakan variabel lingkungan yang diberi nama ```API_ENDPOINT``` dengan nilai ```http://api:5000/api/``` untuk memberi tahu skrip PHP ke mana harus terhubung untuk akses API. Perhatikan bahwa kami tidak menggunakan alamat IP di sini, melainkan ```api:5000``` digunakan karena kami akan memiliki entri nama host dinamis di jaringan pribadi untuk layanan API yang cocok dengan nama layanannya. Terakhir, kami akan mengikat mount ```./www``` folder untuk membuat ```index.php``` file tersedia di dalam ```web``` kontainer layanan di ```/var/www/html``` , yang merupakan root web default untuk server web Apache.
+
+Sekarang, mari kita lihat ```www/index.php``` file yang dihadapi pengguna:
+
+<div><img src="gambar/step4-2.png"></div>
+
+Variabel ```$api_endpoint``` diinisialisasi dengan nilai variabel lingkungan yang disediakan dari ```docker-compose.yml``` file sebagai ```$_ENV["API_ENDPOINT"]```(jika tidak, kembali ke nilai default http://localhost:5000/api/). Permintaan dibuat menggunakan ```file_get_contents``` fungsi yang menggunakan $api_endpointvariabel dan URL yang disediakan pengguna dari ```$_GET["url"]```. Beberapa analisis dan transformasi dilakukan pada respons yang diterima yang nantinya digunakan dalam markup untuk mengisi halaman.
+
+Mari tingkatkan layanan ini dalam mode terpisah menggunakan ```docker-compose``` utilitas:
+
+<div><img src="gambar/step4-3.png"></div>
+
+Keluaran ini menunjukkan bahwa Docker Compose secara otomatis membuat jaringan bernama ```linkextractor_default```, menarik ```php:7-apache``` image dari DockerHub, membuat``` api:python``` image menggunakan lokal kami Dockerfile, dan terakhir, memutar dua wadah ```linkextractor_web_1``` dan ```linkextractor_api_1``` yang sesuai dengan dua layanan yang telah kami tentukan dalam file YAML di atas.
+
+Memeriksa daftar wadah yang berjalan memastikan bahwa kedua layanan tersebut benar-benar berjalan:
+
+<div><img src="gambar/step4-4.png"></div>
+
+Kita seharusnya sekarang dapat berbicara dengan layanan API seperti sebelumnya:
+
+Untuk mengakses antarmuka web klik untuk membuka Link Extractor . Kemudian isi formulir dengan ```https://training.play-with-docker.com/``` (atau URL halaman HTML pilihan Anda) dan kirimkan untuk mengekstrak tautan darinya.
+
+Kami baru saja membuat aplikasi dengan arsitektur layanan mikro, mengisolasi tugas individu dalam layanan terpisah sebagai kebalikan dari aplikasi monolitik di mana semuanya disatukan dalam satu unit. Aplikasi layanan mikro relatif lebih mudah untuk diskalakan, dipelihara, dan dipindahkan. Mereka juga memungkinkan pertukaran komponen yang mudah dengan layanan yang setara. Lebih lanjut tentang itu nanti.
+
+Sekarang, mari kita ubah ```www/index.php``` file untuk mengganti semua kejadian Link Extractordengan Super Link Extractor:
+
+Sebelum melanjutkan ke langkah berikutnya, kami perlu mematikan layanan ini, tetapi Docker Compose dapat membantu kami menanganinya dengan sangat mudah:
+
+<div><img src="gambar/step4-5.png"></div>
+
 
 
 ### Step 5: Redis Service for Caching
