@@ -4,6 +4,8 @@
 
 ### Stage Setup
 
+<div><img src="gambar/Stage-setup.png"></div>
+
 ### STEP-0
 
 
