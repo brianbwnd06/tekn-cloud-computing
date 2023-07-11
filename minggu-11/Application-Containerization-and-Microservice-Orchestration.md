@@ -1,6 +1,6 @@
 # Application Containerization and Microservice Orchestration
 
-###Play with Docker classroom
+### Play with Docker classroom
 
 ### Steps:
 * Stage Setup
@@ -21,6 +21,13 @@ Mari kita mulai dengan terlebih dahulu mengkloning repositori kode demo, menguba
 
 ### Step 0: Basic Link Extractor Script
 
+Periksa ```step0``` cabang dan daftar file di dalamnya
+
+<div><img src="gambar/step0-1.png"></div>
+
+File tersebut ```linkextractor.py``` adalah yang menarik di sini, jadi mari kita lihat isinya: 
+
+<div><img src="gambar/step0-2.png"></div>
 
 ### STEP-1
 
