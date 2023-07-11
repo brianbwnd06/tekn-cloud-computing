@@ -266,6 +266,44 @@ Sekarang, matikan layanan ini dan bersiaplah untuk langkah selanjutnya:
 
 ### Step 6: Swap Python API Service with Ruby
 
+Periksa ```step6``` branch dan daftar file di dalamnya.
+
+<div><img src="gambar/step6-1.png"></div>
+
+Beberapa perubahan signifikan dari langkah sebelumnya meliputi:
+
+* Layanan API yang ditulis dengan Python diganti dengan implementasi Ruby yang serupa
+* Variabel ```API_ENDPOINT``` lingkungan diperbarui untuk menunjuk ke layanan API Ruby yang baru
+* Peristiwa cache ekstraksi tautan (HIT/MISS) dicatat dan dipertahankan menggunakan volume
+  
+Perhatikan bahwa ```./api``` folder tersebut tidak berisi skrip Python apa pun, melainkan sekarang memiliki file Ruby dan ```Gemfile``` untuk mengelola dependensi.
+
+Mari kita telusuri file yang diubah:
+
+<div><img src="gambar/step6-2.png"></div>
+
+<div><img src="gambar/step6-3.png"></div>
+
+Di atas ```Dockerfile``` ditulis untuk skrip Ruby dan cukup jelas.
+
+<div><img src="gambar/step6-4.png"></div>
+
+File ```docker-compose.yml``` memiliki beberapa perubahan kecil di dalamnya. Image ```api``` layanan sekarang bernama ```linkextractor-api:step6-ruby``` , pemetaan port diubah dari ```5000``` menjadi ```4567``` (yang merupakan port default untuk server Sinatra), dan ```API_ENDPOINT``` variabel lingkungan dalam weblayanan diperbarui sehingga kode PHP dapat berkomunikasi dengannya.
+
+<div><img src="gambar/step6-5.png"></div>
+
+<div><img src="gambar/step6-6.png"></div>
+
+Kita dapat menggunakan tailperintah dengan opsi ```-f``` atau ```--follow``` untuk mengikuti keluaran log secara langsung.
+
+<div><img src="gambar/step6-7.png"></div>
+
+Karena kami telah mempertahankan log, mereka seharusnya tetap tersedia setelah layanan hilang:
+
+<div><img src="gambar/step6-8.png"></div>
+
+Ini menggambarkan bahwa caching berfungsi sebagai upaya kedua untuk menghasilkan ```http://example.com/``` cache ```HIT```.
+
 ### Kesimpulan 
 
 Kami memulai tutorial ini dengan skrip Python sederhana yang menggores tautan dari URL halaman web tertentu. Kami mendemonstrasikan berbagai kesulitan dalam menjalankan skrip. Kami kemudian mengilustrasikan betapa mudahnya menjalankan dan membuat skrip menjadi portabel setelah dimasukkan ke dalam container. Pada langkah selanjutnya, kami secara bertahap mengembangkan skrip menjadi tumpukan aplikasi multi-layanan. Dalam prosesnya, kami menjelajahi berbagai konsep arsitektur layanan mikro dan bagaimana alat Docker dapat membantu dalam menyusun tumpukan multi-layanan. Terakhir, kami mendemonstrasikan kemudahan pertukaran komponen layanan mikro dan persistensi data.
