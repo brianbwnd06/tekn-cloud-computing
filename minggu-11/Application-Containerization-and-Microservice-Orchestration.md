@@ -2,7 +2,7 @@
 
 ### Play with Docker classroom
 
-### Steps:
+### Langkah-langkah :
 * Stage Setup
 * Step 0: Basic Link Extractor Script
 * Step 1: Containerized Link Extractor Script
@@ -50,21 +50,21 @@ Izin saat ini ```.-rw-r--r--```. menunjukkan bahwa skrip tidak disetel untuk dap
 
 ### Step 1: Containerized Link Extractor Script
 
-Periksa step1cabang dan daftar file di dalamnya.
+Periksa ```step1``` branh dan daftar file di dalamnya.
 
 <div><img src="gambar/step1-1.png"></div>
 
-Kami telah menambahkan satu file baru (yaitu, Dockerfile) pada langkah ini. Mari kita lihat isinya:
+Kami telah menambahkan satu file baru (yaitu, ```Dockerfile```) pada langkah ini. Mari kita lihat isinya:
 
 <div><img src="gambar/step1-2.png"></div>
 
-Dengan menggunakan ini, Dockerfilekita dapat menyiapkan gambar Docker untuk skrip ini. Kita mulai dari image Docker resmi pythonyang berisi lingkungan run-time Python serta alat yang diperlukan untuk menginstal paket dan dependensi Python. Kami kemudian menambahkan beberapa metadata sebagai label (langkah ini tidak penting, tetapi tetap merupakan praktik yang baik). Dua instruksi berikutnya jalankan pip installperintah untuk menginstal dua paket pihak ketiga yang diperlukan agar skrip berfungsi dengan baik. Kami kemudian membuat direktori kerja /app, menyalin linkextractor.pyfile di dalamnya, dan mengubah izinnya untuk menjadikannya skrip yang dapat dieksekusi. Terakhir, kami menetapkan skrip sebagai titik masuk untuk gambar.
+Dengan menggunakan ini, ```Dockerfilekit```a dapat menyiapkan image Docker untuk skrip ini. Kita mulai dari image Docker resmi ```python``` yang berisi lingkungan run-time Python serta alat yang diperlukan untuk menginstal paket dan dependensi Python. Kami kemudian menambahkan beberapa metadata sebagai label (langkah ini tidak penting, tetapi tetap merupakan praktik yang baik). Dua instruksi berikutnya jalankan ```pip install``` perintah untuk menginstal dua paket pihak ketiga yang diperlukan agar skrip berfungsi dengan baik. Kami kemudian membuat direktori kerja ```/app```, menyalin ```linkextractor.py``` file di dalamnya, dan mengubah izinnya untuk menjadikannya skrip yang dapat dieksekusi. Terakhir, kami menetapkan skrip sebagai titik masuk untuk image.
 
 Sejauh ini, kami baru saja menjelaskan bagaimana kami ingin image Docker kami, tetapi tidak benar-benar membangunnya. Jadi mari kita lakukan itu:
 
 <div><img src="gambar/step1-3.png"></div>
 
-Kami telah membuat gambar Docker yang diberi nama linkextractor:step1berdasarkan Dockerfileilustrasi di atas. Jika build berhasil, kita seharusnya dapat melihatnya di daftar Image:
+Kami telah membuat gambar Docker yang diberi nama ```linkextractor:step1``` berdasarkan ```Dockerfile``` ilustrasi di atas. Jika build berhasil, kita seharusnya dapat melihatnya di daftar Image:
 
 <div><img src="gambar/step1-4.jpg"></div>
 
@@ -78,6 +78,37 @@ Mari kita coba di halaman web dengan lebih banyak tautan di dalamnya:
 
 ### Step 2: Link Extractor Module with Full URI and Anchor Text
 
+Periksa ```step2``` branch dan daftar file di dalamnya.
+
+<div><img src="gambar/step2-1.png"></div>
+
+Pada langkah ini ```linkextractor.py``` skrip diperbarui dengan perubahan fungsional berikut:
+
+* Jalur dinormalisasi menjadi URL lengkap
+* Melaporkan tautan dan teks jangkar
+* Dapat digunakan sebagai modul dalam skrip lain
+  
+Mari kita lihat skrip yang diperbarui:
+
+<div><img src="gambar/step2-2.png"></div>
+
+Logika ekstraksi tautan diabstraksi menjadi fungsi ```extract_links ``` yang menerima URL sebagai parameter dan mengembalikan daftar objek yang berisi teks jangkar dan hyperlink yang dinormalisasi. Fungsionalitas ini sekarang dapat diimpor ke skrip lain sebagai modul (yang akan kita gunakan pada langkah berikutnya).
+
+Sekarang, mari buat image baru dan lihat efek perubahan ini:
+
+<div><img src="gambar/step2-3.png"></div>
+
+Kami telah menggunakan tag baru ```linkextractor:step2``` untuk image ini sehingga kami tidak menimpa image dari untuk ```step1``` mengilustrasikan bahwa mereka dapat berdampingan dan penampung dapat dijalankan menggunakan salah satu dari image ini.
+
+<div><img src="gambar/step2-4.png"></div>
+
+Menjalankan Container satu kali menggunakan ```linkextractor:step2``` image sekarang akan menghasilkan keluaran yang lebih baik:
+
+<div><img src="gambar/step2-5.png"></div>
+
+Menjalankan Container menggunakan image sebelumnya ```linkextractor:step1``` harus tetap menghasilkan keluaran lama:
+
+<div><img src="gambar/step2-6.png"></div>
 
 ### Step 3: Link Extractor API Service
 
