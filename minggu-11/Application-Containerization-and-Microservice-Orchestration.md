@@ -6,7 +6,7 @@
 
 Mari kita mulai dengan terlebih dahulu mengkloning repositori kode demo, mengubah direktori kerja, dan memeriksa cabangnya ```demo```
 
-<img src="gambar/Stage-setup.jpg></div>
+<div><img src="gambar/Stage-setup.jpg"></div>
 
 ### Step 0: Basic Link Extractor Script
 
