@@ -112,6 +112,61 @@ Menjalankan Container menggunakan image sebelumnya ```linkextractor:step1``` har
 
 ### Step 3: Link Extractor API Service
 
+Periksa ```step3``` branch dan daftar file di dalamnya.
+
+<div><img src="gambar/step3-1.png"></div>
+
+<div><img src="gambar/step3-2.png"></div>
+
+Perubahan berikut telah dilakukan pada langkah ini:
+
+* Menambahkan skrip server ```main.py``` yang menggunakan modul ekstraksi tautan yang ditulis di langkah terakhir
+* The ```Dockerfile``` diperbarui untuk merujuk ke ```main.py``` file sebagai gantinya
+* Server dapat diakses sebagai API WEB di ```http://<hostname>[:<prt>]/api/<url>```
+* Dependensi dipindahkan ke ```requirements.txt``` file
+* Membutuhkan pemetaan port agar layanan dapat diakses di luar container ( ```Flask``` server yang digunakan di sini mendengarkan 
+  port ```5000``` secara default)
+  
+Pertama-tama mari kita lihat ```Dockerfile``` perubahannya:
+
+<div><img src="gambar/step3-3.png"></div>
+
+Karena kita sudah mulai menggunakan ```requirements.txt``` untuk dependensi, kita tidak perlu lagi menjalankan ```pip install``` perintah untuk paket individual. Arahan ```ENTRYPOINT``` diganti dengan the ```CMD``` dan merujuk ke ```main.py``` skrip yang memiliki kode server karena kami tidak ingin menggunakan image ini untuk perintah satu kali sekarang.
+
+Modul ```linkextractor.py``` tetap tidak berubah pada langkah ini, jadi mari kita lihat ```main.py``` file yang baru ditambahkan:
+
+<div><img src="gambar/step3-4.png"></div>
+
+Di sini, kami mengimpor ```extract_links``` fungsi dari ```linkextractor``` modul dan mengonversi daftar objek yang dikembalikan menjadi respons ```JSON```.
+
+Saatnya membuat image baru dengan perubahan berikut:
+
+<div><img src="gambar/step3-5.png"></div>
+
+Kemudian jalankan container dalam mode detached ( ```-d``` flag) sehingga terminal tersedia untuk perintah lain saat container masih berjalan. Perhatikan bahwa kita memetakan port ```5000``` container dengan ```5000``` host (menggunakan ```-p 5000:5000``` argumen) agar dapat diakses dari host. Kami juga menetapkan nama ( ```--name=linkextractor```) ke wadah agar lebih mudah melihat log dan membunuh atau menghapus wadah.
+
+<div><img src="gambar/step3-6.png"></div>
+
+Jika semuanya berjalan dengan baik, kita seharusnya dapat melihat wadah yang terdaftar dalam ```Up``` kondisi:
+
+<div><img src="gambar/step3-7.png"></div>
+
+Kami sekarang dapat membuat permintaan HTTP dalam bentuk ```/api/<url>```untuk berbicara dengan server ini dan mengambil respons yang berisi tautan yang diekstraksi:
+
+<div><img src="gambar/step3-8.png"></div>
+
+Sekarang, kami menjalankan layanan API yang menerima permintaan dalam bentuk ```/api/<url>``` dan merespons dengan JSON yang berisi hyperlink dan teks jangkar dari semua tautan yang ada di halaman web di give >```<url>```
+
+Karena penampung berjalan dalam mode terpisah, jadi kami tidak dapat melihat apa yang terjadi di dalam, tetapi kami dapat melihat log menggunakan nama yang  ```linkextractor``` kami tetapkan ke penampung kami:
+
+<div><img src="gambar/step3-9.png"></div>
+
+
+
+
+
+
+
 
 ### Step 4: Link Extractor API and Web Front End Services
 
