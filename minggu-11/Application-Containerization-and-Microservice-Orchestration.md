@@ -2,24 +2,24 @@
 
 ## Application Containerization and Microservice Orchestration
 
-## Stage Setup
+### Stage Setup
 
-## STEP-0
-
-
-## STEP-1
+### STEP-0
 
 
-## STEP-2
+### STEP-1
 
 
-## STEP-3
+### STEP-2
 
 
-## STEP-4
+### STEP-3
 
 
-## STEP-5
+### STEP-4
 
 
-## STEP-6
+### STEP-5
+
+
+### STEP-6
