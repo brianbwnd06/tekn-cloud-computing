@@ -37,6 +37,12 @@ Namun, skrip yang tampaknya sederhana ini mungkin bukan yang termudah untuk dija
 
 Saat kami mencoba menjalankannya sebagai skrip, kami mendapatkan kesalahan ```Permission denied```. Mari kita periksa izin saat ini pada file ini:
 
+<div><img src="gambar/step0-4.png"></div>
+
+Izin saat ini ```.-rw-r--r--```. menunjukkan bahwa skrip tidak disetel untuk dapat dieksekusi. Kita dapat mengubahnya dengan menjalankan ```chmod``` ```a+x linkextractor.py``` atau menjalankannya sebagai program Python alih-alih skrip yang mengeksekusi sendiri seperti yang diilustrasikan di bawah ini:
+
+<div><img src="gambar/step0-5.png"></div>
+
 ### Step 1: Containerized Link Extractor Script
 
 
