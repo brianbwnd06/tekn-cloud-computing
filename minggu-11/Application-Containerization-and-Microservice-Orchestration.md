@@ -214,9 +214,54 @@ Sebelum melanjutkan ke langkah berikutnya, kami perlu mematikan layanan ini, tet
 
 <div><img src="gambar/step4-5.png"></div>
 
-
-
 ### Step 5: Redis Service for Caching
+
+Periksa ```step5``` branch dan daftar file di dalamnya.
+
+<div><img src="gambar/step5-1.png"></div>
+
+Beberapa perubahan nyata dari langkah sebelumnya adalah sebagai berikut:
+
+* Lain ```Dockerfile``` ditambahkan dalam ```./www``` folder untuk aplikasi web PHP untuk membangun citra mandiri dan menghindari pemasangan file langsung
+* Container Redis ditambahkan untuk caching menggunakan image Redis Docker resmi
+* Layanan API berbicara dengan layanan Redis untuk menghindari pengunduhan dan penguraian halaman yang sudah di-scrape sebelumnya
+* Variabel ```REDIS_URL``` lingkungan ditambahkan ke layanan API untuk memungkinkannya terhubung ke cache Redis
+
+Pertama mari kita periksa yang baru ditambahkan ```Dockerfile``` di bawah ./wwwfolder:
+
+<div><img src="gambar/step5-2.png"></div>
+
+Ini agak sederhana ```Dockerfile``` yang menggunakan ```php:7-apache``` image resmi sebagai basis dan menyalin semua file dari . ```/www``` folder ke ```/var/www/html/folder``` image . Inilah yang sebenarnya terjadi pada langkah sebelumnya, tetapi itu diikat dengan menggunakan volume, sementara di sini kita menjadikan kode sebagai bagian dari image  mandiri. Kami juga telah menambahkan ```API_ENDPOINT``` variabel lingkungan di sini dengan nilai default, yang secara implisit menunjukkan bahwa ini adalah informasi penting yang perlu ada agar layanan berfungsi dengan baik (dan harus disesuaikan pada waktu berjalan dengan nilai yang sesuai).
+
+Selanjutnya, kita akan melihat file server API ```api/main.py``` tempat kita menggunakan cache Redis:
+
+<div><img src="gambar/step5-3.png"></div>
+
+Konfigurasi layanan apisebagian besar tetap sama seperti sebelumnya, kecuali tag gambar yang diperbarui dan variabel lingkungan tambahan ```REDIS_URL``` yang mengarah ke layanan Redis. Untuk weblayanan, kami menggunakan ```linkextractor-web:step5-php``` image khusus yang akan dibuat menggunakan folder yang baru ```Dockerfile``` ditambahkan . ```/www.``` Kami tidak lagi memasang ```./www``` folder menggunakan ```volumes``` konfigurasi. Akhirnya, layanan baru bernama ```redis``` ditambahkan yang akan menggunakan gambar resmi dari DockerHub dan tidak memerlukan konfigurasi khusus untuk saat ini. Layanan ini dapat diakses oleh API Python menggunakan nama layanannya, dengan cara yang sama layanan API dapat diakses oleh layanan front-end PHP.
+
+Mari boot layanan ini:
+
+<div><img src="gambar/step5-4.png"></div>
+
+<div><img src="gambar/step5-4(2).png"></div>
+
+Sekarang, setelah ketiga layanan aktif, akses antarmuka web dengan mengeklik Link Extractor . Seharusnya tidak ada perbedaan visual dari langkah sebelumnya. Namun, jika Anda mengekstrak tautan dari halaman dengan banyak tautan, pertama kali akan memakan waktu lebih lama, tetapi upaya berturut-turut ke halaman yang sama akan mengembalikan respons dengan cukup cepat. Untuk memeriksa apakah layanan Redis digunakan atau tidak, kita dapat menggunakan ```docker-compose exec``` diikuti dengan nama layanan dan perintah monitor ```redis``` Redis CLI :
+
+
+<div><img src="gambar/step5-5.png"></div>
+
+Sekarang, coba ekstrak tautan dari beberapa halaman web menggunakan antarmuka web dan lihat perbedaan dalam entri log Redis untuk halaman yang dikorek pertama kali dan yang diulang. Sebelum melanjutkan tutorial lebih lanjut, hentikan ```monitor``` aliran interaktif sebagai hasil dari ```redis-cli``` perintah di atas dengan menekan ```Ctrl + C``` tombol saat terminal interaktif dalam fokus.
+
+Sekarang kita tidak memasang ```/www``` folder di dalam wadah, perubahan lokal seharusnya tidak tercermin dalam layanan yang sedang berjalan:
+
+Verifikasi bahwa perubahan yang dilakukan secara lokal tidak tercermin dalam layanan yang sedang berjalan dengan memuat ulang antarmuka web, lalu kembalikan perubahan:
+
+
+<div><img src="gambar/step5-6.png"></div>
+
+Sekarang, matikan layanan ini dan bersiaplah untuk langkah selanjutnya:
+
+<div><img src="gambar/step5-7.png"></div>
 
 
 ### Step 6: Swap Python API Service with Ruby
