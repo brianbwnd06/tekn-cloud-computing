@@ -1,7 +1,6 @@
-# Play with Docker classroom
+# Application Containerization and Microservice Orchestration
 
-## Application Containerization and Microservice Orchestration
-
+###Play with Docker classroom
 
 ### Steps:
 * Stage Setup
