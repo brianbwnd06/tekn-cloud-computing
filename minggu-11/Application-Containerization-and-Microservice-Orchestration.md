@@ -4,9 +4,11 @@
 
 ### Stage Setup
 
-<div><img src="gambar/Stage-setup.png"></div>
+Mari kita mulai dengan terlebih dahulu mengkloning repositori kode demo, mengubah direktori kerja, dan memeriksa cabangnya ```demo```
 
-### STEP-0
+<img src="gambar/Stage-setup.jpg></div>
+
+### Step 0: Basic Link Extractor Script
 
 
 ### STEP-1
