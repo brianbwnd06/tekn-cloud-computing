@@ -3,4 +3,4 @@
 ### Nama : Brian Simon Bawanda
 ### NIM  : 215610037
 
-[Kuberneter Intro ]([dsd](https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-12/kubernetes-intro.md)https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-12/kubernetes-intro.md)
+[Kuberneter Intro ] ((https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-12/kubernetes-intro.md)https://github.com/brianbwnd06/tekn-cloud-computing/blob/master/minggu-12/kubernetes-intro.md)
